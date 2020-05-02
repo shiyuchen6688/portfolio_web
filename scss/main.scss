@@ -1,0 +1,9 @@
+// get translate to dist/css/main.css nu node_modules
+// node-sass provide auto reload in dist/css/main.css
+
+$primary-color: #444; // declare a variable
+
+body {
+  background: $primary-color;
+  color: #fff;
+}
