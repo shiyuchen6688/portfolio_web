@@ -2,6 +2,7 @@
 // node-sass provide auto reload in dist/css/main.css
 
 $primary-color: #444; // declare a variable
+$secondary-color: #eece1a;
 
 * {
   // use * to select everything in scss
@@ -37,5 +38,40 @@ h3 {
       0.5
     ); // make backgound of sm-heading lighter
     // rgba to be able to see through
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed; // make header stays at top even if you screw done the screen
+  z-index: 2; // how close to you an elem is, 0 behind 1, 1 behind 2...
+  width: 100%; //always stretch across the whole screen
+}
+
+.text-secondary {
+  // to target a class, last name
+  color: $secondary-color;
+}
+
+main {
+  padding: 4rem;
+  height: 100%;
+
+  .icons {
+    // only effect icons inside main
+    margin-top: 1rem;
+
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        color: $secondary-color; // icon change color to yellow when hover
+        transition: all 1s ease-out; // target time how
+      }
+    }
   }
 }
