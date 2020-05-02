@@ -4,6 +4,11 @@
 $primary-color: #444; // declare a variable
 $secondary-color: #eece1a;
 
+// @mixin is like a function, used multiple times
+@mixin easeOut {
+  transition: all 0.5s ease-out; // target time how
+}
+
 * {
   // use * to select everything in scss
   box-sizing: border-box; // include padding and border inside width and height
@@ -70,7 +75,7 @@ main {
 
       &:hover {
         color: $secondary-color; // icon change color to yellow when hover
-        transition: all 1s ease-out; // target time how
+        @include easeOut(); // use @mixin function easeOut
       }
     }
   }
