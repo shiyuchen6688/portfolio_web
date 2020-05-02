@@ -3,9 +3,39 @@
 
 $primary-color: #444; // declare a variable
 
+* {
+  // use * to select everything in scss
+  box-sizing: border-box; // include padding and border inside width and height
+}
+
 body {
   background: $primary-color;
   color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: "Seagoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; // space between lines
 }
 
-// TODO!!! start here to style our website 7:14 episode 2
+// Headings
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400; // make font thiner
+
+  &.lg-heading {
+    // attach to h1 h2 h3, not like .lg-heading which is within
+    font-size: 6rem; // multiply default font-size of html by 6 (each rem is 1 default)
+  }
+
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem; // top&bot left&right
+    background: rgba(
+      lighten($primary-color, 2),
+      0.5
+    ); // make backgound of sm-heading lighter
+    // rgba to be able to see through
+  }
+}
