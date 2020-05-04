@@ -1,8 +1,8 @@
 // get translate to dist/css/main.css nu node_modules
 // node-sass provide auto reload in dist/css/main.css
 
-@import "config"; // no underscore no .scss needed here
-
+@import "config";
+@import "menu";
 * {
   // use * to select everything in scss
   box-sizing: border-box; // include padding and border inside width and height

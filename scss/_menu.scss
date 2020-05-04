@@ -1,0 +1,17 @@
+// Menu Button
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  @include easeOut; //include menu after config so ok
+
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0; // top right bot left
+    background: #fff;
+    @include easeOut;
+  }
+}

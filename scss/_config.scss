@@ -3,12 +3,12 @@
 // import by another file that need to be compiled into css
 
 // this file will include all the variable and mixin
-primary-color: #444; // declare a variable
+$primary-color: #444; // declare a variable
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/background.jpg); // background.jpg + portrait_small + portrait
 // another project folder
-$background-opacity: 0.5;
+$background-opacity: 0.6;
 
 // @mixin is like a function, used multiple times
 @mixin easeOut {
