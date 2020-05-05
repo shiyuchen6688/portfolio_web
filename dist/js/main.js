@@ -11,6 +11,7 @@ const menuNav = document.querySelector('.menu-nav'); // get the first item in th
 const menuBranding = document.querySelector('.menu-branding'); // get the first item in the documen with class = '.btn-menu'
 const navItems = document.querySelectorAll('.nav-item');
 
+
 // Set initial state of menu
 let showMenu = false; // true if menu icon clicked, false otherwise + initially
 
@@ -41,12 +42,11 @@ function toggleMenu() {
         menu.classList.remove('show');
         menuNav.classList.remove('show');
         menuBranding.classList.remove('show');
-        navItems.forEach(item => item.classList.remove('show')); // add 'show' class for each nav-item in navItems array
+        navItems.forEach(item => item.classList.remove('show'));
 
         // set Menu State
         showMenu = false;
     }
 }
-
 
 
