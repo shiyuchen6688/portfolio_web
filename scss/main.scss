@@ -3,6 +3,8 @@
 
 @import "config";
 @import "menu";
+@import "mobile";
+
 * {
   // use * to select everything in scss
   box-sizing: border-box; // include padding and border inside width and height
