@@ -3,7 +3,7 @@
 // import by another file that need to be compiled into css
 
 // this file will include all the variable and mixin
-$primary-color: #444; // declare a variable
+$primary-color: #444; // declare a variable //#444
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/background.jpg); // background.jpg + portrait_small + portrait
@@ -32,6 +32,16 @@ $background-opacity: 0.6;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+// Set Text Color
+// use function NOT mixin becuase we need to return something
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return black;
+  } @else {
+    @return white;
   }
 }
 

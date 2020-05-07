@@ -13,7 +13,9 @@
 body {
   @include background;
   background: $primary-color;
-  color: #fff;
+  color: set-text-color(
+    $primary-color
+  ); // make text visible in any background color
   height: 100%;
   margin: 0;
   font-family: "Seagoe UI", Tahoma, Geneva, Verdana, sans-serif;
