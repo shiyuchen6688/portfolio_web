@@ -3,7 +3,6 @@
 
 @import "config";
 @import "menu";
-@import "mobile";
 
 * {
   // use * to select everything in scss
@@ -130,3 +129,5 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
+
+@import "mobile"; // run after initial css
