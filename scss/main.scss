@@ -122,6 +122,27 @@ main {
   }
 }
 
+// Work
+.projects {
+  display: grid;
+  img {
+    width: 100%;
+    border: 3px black solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+  grid-template-areas:
+    "project1"
+    "project2"
+    "project3";
+
+  grid-template-columns: 1fr;
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
