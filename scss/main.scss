@@ -89,4 +89,44 @@ main {
 
 .about-info {
   display: grid;
+  grid-gap: 30px; // spacing between graps
+  grid-template-areas: "bioimage bio bio" // first row
+    "job1 job2 job3"; // second row
+  grid-template-columns: repear(3, 1fr); // == 1fr 1fr 1fr
+
+  // Define grid area
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border: $secondary-color 3px solid;
+  }
+
+  .bio {
+    grid-area: bio;
+  }
+
+  .job-1 {
+    grid-area: job1;
+  }
+
+  .job-2 {
+    grid-area: job2;
+  }
+  .job-3 {
+    grid-area: job3;
+  }
+
+  .job {
+    background: lighten($primary-color, 5);
+    padding: 0.4rem;
+    border-bottom: $secondary-color 5px solid;
+  }
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
 }
