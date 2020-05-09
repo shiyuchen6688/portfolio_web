@@ -84,8 +84,15 @@ main {
       margin-top: 20vh; //% of height of the viewport
     }
   }
+
+  #main-note {
+    margin: 10px;
+    color: $secondary-color;
+    font-size: 20px;
+  }
 }
 
+// About me
 .about-info {
   display: grid;
   grid-gap: 30px; // spacing between graps
@@ -96,12 +103,18 @@ main {
   // Define grid area
   .bio-image {
     grid-area: bioimage;
-    margin: auto;
+    width: 350px;
+    height: 500px;
+    margin-left: 100px;
+    margin-right: 100px;
     border: $secondary-color 3px solid;
   }
 
   .bio {
     grid-area: bio;
+    li {
+      margin: 5px;
+    }
   }
 
   .job-1 {
@@ -120,6 +133,10 @@ main {
     padding: 0.4rem;
     border-bottom: $secondary-color 5px solid;
   }
+
+  li {
+    margin: 20px;
+  }
 }
 
 // Work
@@ -135,6 +152,16 @@ main {
       @include easeOut;
     }
   }
+
+  .project {
+    margin: 30px;
+    h3 {
+      font-weight: 100;
+      font-size: 30px;
+      color: #a0522d;
+    }
+  }
+
   grid-template-areas:
     "project1"
     "project2"
